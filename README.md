@@ -1,4 +1,4 @@
-# Mezmo to Fluent Bit to Chronosphere MVP
+# Mezmo → Fluent Bit → Chronosphere MVP
 
 ## Overview
 
@@ -16,4 +16,6 @@ python app/log-generator.py
 
 2. Use Fluent Bit to process logs from `logs/app.log` and output them as structured JSON.
 
-3. (Optional) Forward Fluent Bit output to OpenTelemetry Collector → Chronosphere.
+3. Forward Fluent Bit output to OpenTelemetry Collector → Chronosphere.
+
+4. Run the Docker file
