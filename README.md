@@ -1,4 +1,4 @@
-# Mezmo → Fluent Bit → Chronosphere MVP
+# Mezmo to Fluent Bit to Chronosphere MVP
 
 ## Overview
 
