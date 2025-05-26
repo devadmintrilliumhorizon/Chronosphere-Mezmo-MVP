@@ -4,7 +4,7 @@ import random
 import os
 
 # Create logs directory if it doesn't exist
-os.makedirs("logs", exist_ok=True)
+os.makedirs("/logs", exist_ok=True)
 
 # Set up logging
 log_file = "logs/app.log"
