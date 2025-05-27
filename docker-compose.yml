@@ -11,12 +11,13 @@ services:
     image: fluent/fluent-bit:latest
     volumes:
       - ./fluentbit/fluent-bit.conf:/fluent-bit/etc/fluent-bit.conf
-      - ./app/logs:/app/logs
+      - ./fluentbit/parsers.conf:/fluent-bit/etc/parsers.conf
+      - ./logs:/app/logs
     depends_on:
       - log-generator
 
   otel-collector:
-    image: otel/opentelemetry-collector:latest
+    image: otel/opentelemetry-collector-contrib:latest
     command: ["--config=/etc/otel-collector.yaml"]
     volumes:
       - ./otel-collector/otel-collector.yaml:/etc/otel-collector.yaml
